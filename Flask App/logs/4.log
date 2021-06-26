@@ -1,0 +1,31 @@
+05-03 14:44 root         INFO     POST request,
+Path: /register
+Headers:
+Host: 127.0.0.1:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:88.0) Gecko/20100101 Firefox/88.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 55
+Origin: http://127.0.0.1:8080
+Connection: keep-alive
+Referer: http://127.0.0.1:8080/register
+Upgrade-Insecure-Requests: 1
+
+
+Content: 
+Name: Ishara
+Email: ishara@gmail.com
+Password: Abc@123
+
+05-03 14:44 werkzeug     INFO     127.0.0.1 - - [03/May/2021 14:44:00] "[37mPOST /register HTTP/1.1[0m" 200 -
+05-03 14:44 werkzeug     INFO     127.0.0.1 - - [03/May/2021 14:44:00] "[37mGET /static/img/picture.png HTTP/1.1[0m" 200 -
+05-03 14:44 werkzeug     INFO     127.0.0.1 - - [03/May/2021 14:44:52] "[33mGET /etc/passwd%00 HTTP/1.1[0m" 404 -
+05-03 14:49 werkzeug     INFO     127.0.0.1 - - [03/May/2021 14:49:56] "[33mGET http://192.168.139.132/vulnerabilities/fi/?page=../../../../../../etc/passwd HTTP/1.1[0m" 404 -
+05-03 14:50 werkzeug     INFO     127.0.0.1 - - [03/May/2021 14:50:07] "[33mCONNECT incoming.telemetry.mozilla.org:443 HTTP/1.1[0m" 404 -
+05-03 14:50 werkzeug     INFO     127.0.0.1 - - [03/May/2021 14:50:20] "[33mGET http://192.168.139.132/vulnerabilities/fi/?page=../../../../../../etc/passwd HTTP/1.1[0m" 404 -
+05-03 14:50 werkzeug     INFO     127.0.0.1 - - [03/May/2021 14:50:42] "[33mGET http://192.168.139.132/vulnerabilities/upload/ HTTP/1.1[0m" 404 -
+05-03 14:50 werkzeug     INFO     127.0.0.1 - - [03/May/2021 14:50:58] "[33mGET http://192.168.139.132/vulnerabilities/upload/ HTTP/1.1[0m" 404 -
+05-03 14:51 werkzeug     INFO     127.0.0.1 - - [03/May/2021 14:51:07] "[33mCONNECT firefox.settings.services.mozilla.com:443 HTTP/1.1[0m" 404 -
+05-03 14:51 werkzeug     INFO     127.0.0.1 - - [03/May/2021 14:51:26] "[33mGET http://192.168.139.132/vulnerabilities/upload/ HTTP/1.1[0m" 404 -

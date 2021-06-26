@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.1.1/css/mdb.min.css" integrity="sha512-vbHq6SaqHW/OPyfei/7ur+YG+Qa0FbcAhv8aftHV1f/97a8PsHAtQL8Ero9OcjmQ+obsWSESqi1kx1Hi/oi+Hg==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> 
+    <!-- Edit Title From Here -->
+    <title>Student Photo Submission</title>
+    <style>
+      html {
+        padding-left: 450px;
+        padding-right: 450px;
+        padding-top: 160px;
+      }
+    </style>
+</head>
+<body>
+
+  {% if wrong == True %}
+  <div class="alert alert-danger" role="alert">
+    <strong>Wrong Credentials!!</strong> Please Enter Valid Credentials
+  </div>
+  {% endif %}
+
+  <form action="/home" method="POST" >
+    <!-- Email input -->
+    <div class="form-outline mb-4">
+      <input type="email" id="email" name="email" class="form-control" required/>
+      <label class="form-label" for="email">Email address</label>
+    </div>
+    <!-- Password input -->
+    <div class="form-outline mb-4">
+      <input type="password" id="password" name="password" class="form-control" required/>
+      <label class="form-label" for="password">Password</label>
+    </div>
+  
+    <!-- 2 column grid layout for inline styling -->
+    <div class="row mb-4">
+      <div class="col d-flex justify-content-center">
+        <!-- Checkbox -->
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="form2Example3"
+            checked
+          />
+          <label class="form-check-label" for="form2Example3">Remember me</label>
+        </div>
+      </div>
+    </div>
+  
+    <button type="submit" class="btn btn-primary btn-block mb-4">Sign in</button>
+
+    <div class="text-center">
+      <p>Not a member? <a href="/register">Register</a></p>
+    </div>
+  </form>
+    <!-- Bootstrap Scripts -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.1.1/js/mdb.min.js" integrity="sha512-3yGteaiMnpsxSo0LHYMpODezVs6NjMZ6vFyRoqQK4WcRhacpMCgUsQ4yfu5GtcMoWf2zjDP5ENtmx1+eCCtKXw==" crossorigin="anonymous"></script>
+</body>
+</html>

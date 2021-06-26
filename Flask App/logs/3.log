@@ -1,0 +1,13 @@
+05-03 14:43 root         INFO     GET request,
+Path: /register
+Headers:Host: 127.0.0.1:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:88.0) Gecko/20100101 Firefox/88.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Referer: http://127.0.0.1:8080/home
+Upgrade-Insecure-Requests: 1
+
+
+05-03 14:43 werkzeug     INFO     127.0.0.1 - - [03/May/2021 14:43:38] "[37mGET /register HTTP/1.1[0m" 200 -

@@ -1,0 +1,24 @@
+06-26 16:36 root         INFO     POST request,
+Path: /register
+Headers:
+Host: 127.0.0.1:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:89.0) Gecko/20100101 Firefox/89.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 53
+Origin: http://127.0.0.1:8080
+Dnt: 1
+Connection: keep-alive
+Referer: http://127.0.0.1:8080/register
+Upgrade-Insecure-Requests: 1
+
+
+Content: 
+Name: Kamal
+Email: kamal@gmail.com
+Password: Abc@123
+
+06-26 16:36 werkzeug     INFO     127.0.0.1 - - [26/Jun/2021 16:36:45] "[37mPOST /register HTTP/1.1[0m" 200 -
+06-26 16:36 werkzeug     INFO     127.0.0.1 - - [26/Jun/2021 16:36:45] "[37mGET /static/img/picture.png HTTP/1.1[0m" 200 -
